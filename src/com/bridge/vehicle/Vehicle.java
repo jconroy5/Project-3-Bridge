@@ -10,6 +10,7 @@ public abstract class Vehicle {
 
     public void setEngine(Engine engine){
         this.engine = engine;
+        System.out.println("\nThe vehicle now has a " + engine + " engine.");
     }
 
     public abstract void drive();
@@ -18,7 +19,7 @@ public abstract class Vehicle {
         int ratio = weight/horsepower;
 
         if (ratio < 6){
-            System.out.println("The vehicle is going at ludicrous speed!");
+            System.out.println("The vehicle is going at LUDICROUS SPEED!");
         } else if (ratio < 10){
             System.out.println("The vehicle is going at fast speed.");
         } else if (ratio < 25){
