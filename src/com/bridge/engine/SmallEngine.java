@@ -1,5 +1,9 @@
 package com.bridge.engine;
 
+/*
+SmallEngine is an implementation of Engine.
+Each Engine implementation has a set horsepower value and a run() function.
+ */
 public class SmallEngine implements Engine{
     int horsepower;
 

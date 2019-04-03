@@ -1,5 +1,9 @@
 package com.bridge.engine;
 
+/*
+SuperEngine is an implementation of Engine.
+Each Engine implementation has a set horsepower value and a run() function.
+ */
 public class SuperEngine implements Engine{
     int horsepower;
 
