@@ -7,4 +7,11 @@ public class Bus extends Vehicle{
         this.weight = 25000;
         this.engine = engine;
     }
+
+    @Override
+    public void drive() {
+        System.out.println("\nThe bus is driving.");
+        int horsepower = engine.run();
+        reportSpeed(horsepower);
+    }
 }

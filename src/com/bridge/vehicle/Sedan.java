@@ -7,4 +7,11 @@ public class Sedan extends Vehicle{
         this.weight = 3000;
         this.engine = engine;
     }
+
+    @Override
+    public void drive() {
+        System.out.println("\nThe sedan is driving.");
+        int horsepower = engine.run();
+        reportSpeed(horsepower);
+    }
 }
