@@ -1,4 +1,4 @@
-package com.bridge;
+package com.bridge.engine;
 
 public class MediumEngine implements Engine{
     int horsepower;

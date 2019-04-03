@@ -1,4 +1,4 @@
-package com.bridge;
+package com.bridge.engine;
 
 public class SmallEngine implements Engine{
     int horsepower;

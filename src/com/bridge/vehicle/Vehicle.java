@@ -1,4 +1,6 @@
-package com.bridge;
+package com.bridge.vehicle;
+
+import com.bridge.engine.Engine;
 
 public abstract class Vehicle {
 
