@@ -1,5 +1,10 @@
 package com.bridge;
 
-public class Vehicle {
+public abstract class Vehicle {
     int weight;
+    Engine engine;
+
+    public void setEngine(Engine engine){
+        this.engine = engine;
+    }
 }
