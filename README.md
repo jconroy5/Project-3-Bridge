@@ -8,6 +8,15 @@ src/com/bridge/client
 ```
 
 # Project Description:
+For our Bridge pattern, we created a program which connects two hierarchies (Vehicle and Engine) that are used by the Driver client to create a vehicle based on type and engine size, and then reports the speed of said vehicle when it is driving. The Bridge pattern is used by means of connecting the Vehicle abstraction class and its subclasses (contained in the vehicle package) and the Engine interface and its implementers (contained in the engine package). The Driver client imports both the engine and vehicle packages and contains the main method used to execute the program.
+
+Engine.java is the interface whose implementers are the engine sizes that can be used by a given vehicle. The engine implementers are named “SmallEngine”, “MediumEngine”, “LargeEngine”, and “SuperEngine”. Each engine implementer has a specific value for horsepower, as well as a run() function which returns the horsepower value.
+
+Vehicle.java is an abstract class used to create various types of Vehicle subclasses. These subclasses are named “Sedan”, “SUV”, and “Bus”. Each of these has a set weight in U.S. pounds and a function called drive(), which is the abstract method pulled from Vehicle.java. This function tells a vehicle’s engine to run and report the speed of the vehicle. Each Vehicle subclass imports the predefined implementers of Engine.java. This allows the Driver client to use setEngine() as an argument when creating a new Vehicle, thus defining it’s engine size. This way, the client can call the reportSpeed() function to calculate the speed of a vehicle based on its type and engine size.
+
+Vehicle.java contains the reportSpeed() function. It is used to print a description of a vehicle’s speed, based on it’s type and engine size, to the console. The function uses a ratio of vehicle weight to engine horsepower to determine the relative speed description (weight divided by horsepower). The reportSpeed() method contains conditional statements which determine the most accurate speed description to print using the aforementioned speed ratio.
+
+# Project Rubric:
 
 Project 3: Implementing Patterns I
 
